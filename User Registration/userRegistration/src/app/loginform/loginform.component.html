@@ -1,0 +1,43 @@
+<div class="div1">
+    <mat-card class="card1">
+        <mat-card-content class="card1A">
+            <div class="img1" ><img src="https://www.frxcash.appbros.in/images/b11.png" style="border-radius: 10px;"></div>
+
+            <div class="formdiv">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">User Name</label>
+                        <input type="email"
+                         class="form-control" 
+                         id="firstName" name="firstName"
+                         [(ngModel)]="signUpUser.firstName" >
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Confirm-Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mb-3" style="margin-right: 20px;">Submit</button>
+
+                    <button type="submit" class="btn btn-danger mb-3" style="margin-right: 20px;">Reset</button>
+
+                    <button type="submit" class="btn btn-warning mb-3" style="color:green;">SignUp</button>
+                </form>
+
+            </div>
+
+        </mat-card-content>
+
+
+
+    </mat-card>
+
+</div>
