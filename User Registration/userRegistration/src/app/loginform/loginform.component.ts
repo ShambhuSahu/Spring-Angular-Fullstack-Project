@@ -10,11 +10,9 @@ import { UserRegisterService } from '../service/user-register.service';
 })
 export class LoginformComponent implements OnInit {
 
-  signUpUser:SignupUser=new SignupUser();
-  SignUpForm:any;
 
 
-  constructor(private formBuilder:FormBuilder,private userRegisterService:UserRegisterService) { }
+  constructor() { }
 
   ngOnInit(): void {
 
@@ -22,13 +20,5 @@ export class LoginformComponent implements OnInit {
   
   }
 
-
-  onSubmit() {
-    console.log(this.signUpUser);
-  this.userRegisterService.signupUser (this.signUpUser).subscribe(data=>{
-    alert("sucessfully user is created...")
-
-  },error=>alert("error occure"))
-}
 
 }

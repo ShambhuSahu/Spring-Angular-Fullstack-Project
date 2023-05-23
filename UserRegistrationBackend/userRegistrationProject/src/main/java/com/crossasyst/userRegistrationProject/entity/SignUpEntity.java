@@ -16,7 +16,6 @@ public class SignUpEntity {
     @SequenceGenerator(name = "seq_signup_id", sequenceName = "seq_signup_id", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_signup_id")
     private Long id;
-
     private String firstName;
     private String lastName;
     private String emailAddress;    
